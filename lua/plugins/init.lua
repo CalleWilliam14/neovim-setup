@@ -1,0 +1,13 @@
+require('plugins.packer')
+require('plugins.nerdtree_conf')
+require('plugins.lsp_conf')
+require('plugins.indent_blankline_conf')
+require('plugins.smartcolumn_nvim_conf')
+require('plugins.lightline_vim_conf')
+require('plugins.goto_preview_conf')
+require('plugins.guess_indent_nvim_conf')
+require('plugins.vim_closetag_conf')
+require('plugins.outline_nvim_conf')
+require('plugins.onedarkpro_nvim_conf')
+require('plugins.nvim_ufo_conf')
+
