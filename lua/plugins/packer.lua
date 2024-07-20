@@ -11,8 +11,8 @@ return require('packer').startup(function(use)
   -- auto pairs
   use 'jiangmiao/auto-pairs'
 
-  -- nerdtree
-  use 'preservim/nerdtree'
+  -- nvim-tree
+  use 'nvim-tree/nvim-tree.lua'
 
   -- lsp
   use {
@@ -44,9 +44,6 @@ return require('packer').startup(function(use)
 
   -- smart column
   use 'm4xshen/smartcolumn.nvim'
-
-  -- nerdtree git
-  use 'Xuyuanp/nerdtree-git-plugin'
 
   -- lightline vim
   use 'itchyny/lightline.vim'
