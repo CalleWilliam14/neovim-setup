@@ -25,13 +25,13 @@ require('nvim-tree').setup({
       },
       glyphs = {
         git = {
-          unstaged = "✗",
-          staged = "✓",
-          unmerged = "═",
-          renamed = "➜",
-          untracked = "★",
-          deleted = "✖",
-          ignored = "◌",
+          unstaged = '\u{2717}',
+          staged = '\u{2713}',
+          unmerged = '\u{2550}',
+          renamed = '\u{279C}',
+          untracked = '\u{2605}',
+          deleted = '\u{2716}',
+          ignored = '\u{25CC}',
         },
         symlink = ''
       },
