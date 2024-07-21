@@ -72,7 +72,7 @@ return require('packer').startup(function(use)
   }
 
   -- close tags
-  use 'alvan/vim-closetag'
+  use 'windwp/nvim-ts-autotag'
 
   -- outline
   use 'hedyhli/outline.nvim'
