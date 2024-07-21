@@ -50,14 +50,13 @@ return require('packer').startup(function(use)
   -- smart column
   use 'm4xshen/smartcolumn.nvim'
 
-  -- lightline vim
-  use 'itchyny/lightline.vim'
-
-  -- lightline gitbranch
-  use 'itchyny/vim-gitbranch'
-
-  -- lightline lsp diagnostic indicator
-  use 'spywhere/lightline-lsp'
+  -- vim lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    }
+  }
 
   -- goto-preview
   use 'rmagatti/goto-preview'
