@@ -63,3 +63,15 @@ vim.diagnostic.config({
   }
 })
 
+local signs = {
+  Error = '\u{f057} ',
+  Warn = '\u{f071} ',
+  Hint = '\u{f06a} ',
+  Info = '\u{f05a} '
+}
+
+for type, icon in pairs(signs) do
+  local hl = 'DiagnosticSign' .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
+end
+

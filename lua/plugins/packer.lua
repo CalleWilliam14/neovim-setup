@@ -12,7 +12,12 @@ return require('packer').startup(function(use)
   use 'jiangmiao/auto-pairs'
 
   -- nvim-tree
-  use 'nvim-tree/nvim-tree.lua'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons'
+    }
+  }
 
   -- lsp
   use {
