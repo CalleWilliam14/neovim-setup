@@ -85,5 +85,11 @@ return require('packer').startup(function(use)
     'kevinhwang91/nvim-ufo',
     requires = 'kevinhwang91/promise-async'
   }
+
+  -- nvim-treesitter
+  use (
+    'nvim-treesitter/nvim-treesitter',
+    { run = ':TSUpdate' }
+  )
 end)
 

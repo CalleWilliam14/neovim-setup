@@ -10,4 +10,5 @@ require('plugins.onedarkpro_nvim_conf')
 require('plugins.nvim_ufo_conf')
 require('plugins.nvim_tree_conf')
 require('plugins.lualine_nvim')
+require('plugins.nvim_treesitter_conf')
 
