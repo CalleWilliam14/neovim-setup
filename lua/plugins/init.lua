@@ -11,4 +11,4 @@ require('plugins.nvim_ufo_conf')
 require('plugins.nvim_tree_conf')
 require('plugins.lualine_nvim')
 require('plugins.nvim_treesitter_conf')
-
+require('plugins.Comment_nvim_conf')
