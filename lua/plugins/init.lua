@@ -10,4 +10,5 @@ require('plugins.vim_closetag_conf')
 require('plugins.outline_nvim_conf')
 require('plugins.onedarkpro_nvim_conf')
 require('plugins.nvim_ufo_conf')
+require('plugins.Comment_nvim_conf')
 
