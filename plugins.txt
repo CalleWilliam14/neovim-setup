@@ -18,10 +18,10 @@ nvim-lualine/lualine.nvim
 rmagatti/goto-preview
 NMAC427/guess-indent.nvim
 nvim-telescope/telescope.nvim
-nvim-lua/plenary.nvim
+    nvim-lua/plenary.nvim
 windwp/nvim-ts-autotag
 hedyhli/outline.nvim
 olimorris/onedarkpro.nvim
 kevinhwang91/nvim-ufo
-kevinhwang91/promise-async
+    kevinhwang91/promise-async
 nvim-treesitter/nvim-treesitter
