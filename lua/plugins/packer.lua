@@ -81,5 +81,7 @@ return require('packer').startup(function(use)
     'kevinhwang91/nvim-ufo',
     requires = 'kevinhwang91/promise-async'
   }
+
+  use 'numToStr/Comment.nvim'
 end)
 
