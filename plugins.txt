@@ -1,6 +1,7 @@
 wbthomason/packer.nvim
 jiangmiao/auto-pairs
-preservim/nerdtree
+nvim-tree/nvim-tree.lua
+    nvim-tree/nvim-web-devicons
 VonHeikemen/lsp-zero.nvim
     neovim/nvim-lspconfig
     williamboman/mason.nvim
@@ -12,16 +13,15 @@ airblade/vim-gitgutter
 lukas-reineke/indent-blankline.nvim
 tpope/vim-surround
 m4xshen/smartcolumn.nvim
-Xuyuanp/nerdtree-git-plugin
-itchyny/lightline.vim
-itchyny/vim-gitbranch
-spywhere/lightline-lsp
+nvim-lualine/lualine.nvim
+    nvim-tree/nvim-web-devicons
 rmagatti/goto-preview
 NMAC427/guess-indent.nvim
 nvim-telescope/telescope.nvim
-nvim-lua/plenary.nvim
-alvan/vim-closetag
+    nvim-lua/plenary.nvim
+windwp/nvim-ts-autotag
 hedyhli/outline.nvim
 olimorris/onedarkpro.nvim
 kevinhwang91/nvim-ufo
-kevinhwang91/promise-async
+    kevinhwang91/promise-async
+nvim-treesitter/nvim-treesitter

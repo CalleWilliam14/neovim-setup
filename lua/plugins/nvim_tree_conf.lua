@@ -13,29 +13,6 @@ require('nvim-tree').setup({
   },
   renderer = {
     group_empty = true,
-    icons = {
-      show = {
-        file = false,
-        folder = false,
-        folder_arrow = false,
-        git = true,
-        modified = true,
-        diagnostics = true,
-        bookmarks = false,
-      },
-      glyphs = {
-        git = {
-          unstaged = '\u{2717}',
-          staged = '\u{2713}',
-          unmerged = '\u{2550}',
-          renamed = '\u{279C}',
-          untracked = '\u{2605}',
-          deleted = '\u{2716}',
-          ignored = '\u{25CC}',
-        },
-        symlink = ''
-      },
-    },
   },
   filters = {
     -- dotfiles = true,
@@ -43,12 +20,6 @@ require('nvim-tree').setup({
   diagnostics = {
     enable = true,
     show_on_dirs = true,
-    icons = {
-      hint = 'H',
-      info = 'I',
-      warning = 'W',
-      error = 'E'
-    }
   }
 })
 

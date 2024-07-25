@@ -12,7 +12,12 @@ return require('packer').startup(function(use)
   use 'jiangmiao/auto-pairs'
 
   -- nvim-tree
-  use 'nvim-tree/nvim-tree.lua'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons'
+    }
+  }
 
   -- lsp
   use {
@@ -45,14 +50,13 @@ return require('packer').startup(function(use)
   -- smart column
   use 'm4xshen/smartcolumn.nvim'
 
-  -- lightline vim
-  use 'itchyny/lightline.vim'
-
-  -- lightline gitbranch
-  use 'itchyny/vim-gitbranch'
-
-  -- lightline lsp diagnostic indicator
-  use 'spywhere/lightline-lsp'
+  -- vim lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    }
+  }
 
   -- goto-preview
   use 'rmagatti/goto-preview'
@@ -68,7 +72,7 @@ return require('packer').startup(function(use)
   }
 
   -- close tags
-  use 'alvan/vim-closetag'
+  use 'windwp/nvim-ts-autotag'
 
   -- outline
   use 'hedyhli/outline.nvim'
@@ -81,6 +85,12 @@ return require('packer').startup(function(use)
     'kevinhwang91/nvim-ufo',
     requires = 'kevinhwang91/promise-async'
   }
+
+  -- nvim-treesitter
+  use (
+    'nvim-treesitter/nvim-treesitter',
+    { run = ':TSUpdate' }
+  )
 
   use 'numToStr/Comment.nvim'
 end)
