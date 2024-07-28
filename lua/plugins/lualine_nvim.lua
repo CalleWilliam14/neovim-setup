@@ -2,6 +2,9 @@ require('lualine').setup({
   options = {
     globalstatus = true,
   },
+  sections = {
+    lualine_c = {},
+  },
   tabline = {
     lualine_a = {
       {
@@ -11,5 +14,8 @@ require('lualine').setup({
       }
     },
   },
+  inactive_winbar = {
+    lualine_c = { 'filename' },
+  }
 })
 
