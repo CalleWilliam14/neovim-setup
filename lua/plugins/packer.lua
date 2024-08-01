@@ -92,6 +92,14 @@ return require('packer').startup(function(use)
     { run = ':TSUpdate' }
   )
 
+  -- comment code
   use 'numToStr/Comment.nvim'
+
+  -- tabline bufferline
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
 end)
 
