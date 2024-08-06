@@ -25,3 +25,4 @@ olimorris/onedarkpro.nvim
 kevinhwang91/nvim-ufo
     kevinhwang91/promise-async
 nvim-treesitter/nvim-treesitter
+numToStr/Comment.nvim
