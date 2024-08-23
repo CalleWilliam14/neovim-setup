@@ -101,5 +101,8 @@ return require('packer').startup(function(use)
     tag = "*",
     requires = 'nvim-tree/nvim-web-devicons'
   }
+
+  -- nvim java
+  use 'mfussenegger/nvim-jdtls'
 end)
 
