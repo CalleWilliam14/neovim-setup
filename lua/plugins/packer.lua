@@ -104,5 +104,8 @@ return require('packer').startup(function(use)
 
   -- nvim java
   use 'mfussenegger/nvim-jdtls'
+
+  -- kotlin-vim
+  use 'udalov/kotlin-vim'
 end)
 
