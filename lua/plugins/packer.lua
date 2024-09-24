@@ -49,13 +49,19 @@ return require('packer').startup(function(use)
   use 'Xuyuanp/nerdtree-git-plugin'
 
   -- lightline vim
-  use 'itchyny/lightline.vim'
+  -- use 'itchyny/lightline.vim'
 
   -- lightline gitbranch
-  use 'itchyny/vim-gitbranch'
+  -- use 'itchyny/vim-gitbranch'
 
   -- lightline lsp diagnostic indicator
-  use 'spywhere/lightline-lsp'
+  -- use 'spywhere/lightline-lsp'
+
+  -- lualine
+  use 'nvim-lualine/lualine.nvim'
+
+  -- bufferline
+  use 'akinsho/bufferline.nvim'
 
   -- goto-preview
   use 'rmagatti/goto-preview'
@@ -71,7 +77,7 @@ return require('packer').startup(function(use)
   }
 
   -- close tags
-  use 'alvan/vim-closetag'
+  -- use 'alvan/vim-closetag'
 
   -- outline
   use 'hedyhli/outline.nvim'
@@ -86,5 +92,15 @@ return require('packer').startup(function(use)
   }
 
   use 'numToStr/Comment.nvim'
+
+  -- nvim java
+  use 'mfussenegger/nvim-jdtls'
+
+  -- syntax hightlight
+  use 'pangloss/vim-javascript'
+  use 'peitalin/vim-jsx-typescript'
+  use 'herringtondarkholme/yats.vim'
+  use 'uiiaoo/java-syntax.vim'
+  use 'vim-language-dept/css-syntax.vim'
 end)
 
