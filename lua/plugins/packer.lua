@@ -107,5 +107,11 @@ return require('packer').startup(function(use)
 
   -- kotlin-vim
   use 'udalov/kotlin-vim'
+
+  -- vim rest console
+  use 'diepm/vim-rest-console'
+
+  -- kanagawa colorscheme
+  use 'rebelot/kanagawa.nvim'
 end)
 
