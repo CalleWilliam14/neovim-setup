@@ -7,6 +7,8 @@ require('smartcolumn').setup({
     'mason',
     'checkhealth',
     'lspinfo',
+    'rest',
+    'json'
   },
 })
 

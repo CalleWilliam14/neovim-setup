@@ -11,9 +11,6 @@ return require('packer').startup(function(use)
   -- auto pairs
   use 'jiangmiao/auto-pairs'
 
-  -- nerdtree
-  use 'preservim/nerdtree'
-
   -- lsp
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -45,18 +42,6 @@ return require('packer').startup(function(use)
   -- smart column
   use 'm4xshen/smartcolumn.nvim'
 
-  -- nerdtree git
-  use 'Xuyuanp/nerdtree-git-plugin'
-
-  -- lightline vim
-  -- use 'itchyny/lightline.vim'
-
-  -- lightline gitbranch
-  -- use 'itchyny/vim-gitbranch'
-
-  -- lightline lsp diagnostic indicator
-  -- use 'spywhere/lightline-lsp'
-
   -- lualine
   use 'nvim-lualine/lualine.nvim'
 
@@ -76,14 +61,8 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
-  -- close tags
-  -- use 'alvan/vim-closetag'
-
   -- outline
   use 'hedyhli/outline.nvim'
-
-  -- onedarkpro
-  use 'olimorris/onedarkpro.nvim'
 
   -- modern fold
   use {
@@ -91,6 +70,7 @@ return require('packer').startup(function(use)
     requires = 'kevinhwang91/promise-async'
   }
 
+  -- Comments
   use 'numToStr/Comment.nvim'
 
   -- nvim java
@@ -102,5 +82,13 @@ return require('packer').startup(function(use)
   use 'herringtondarkholme/yats.vim'
   use 'uiiaoo/java-syntax.vim'
   use 'vim-language-dept/css-syntax.vim'
+
+  -- rest console
+  use 'diepm/vim-rest-console'
+
+  use 'rebelot/kanagawa.nvim'
+
+  -- nvim-tree
+  use 'nvim-tree/nvim-tree.lua'
 end)
 
