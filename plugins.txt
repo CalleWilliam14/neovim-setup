@@ -21,8 +21,13 @@ nvim-telescope/telescope.nvim
     nvim-lua/plenary.nvim
 windwp/nvim-ts-autotag
 hedyhli/outline.nvim
-olimorris/onedarkpro.nvim
 kevinhwang91/nvim-ufo
     kevinhwang91/promise-async
 nvim-treesitter/nvim-treesitter
 numToStr/Comment.nvim
+akinsho/bufferline.nvim
+    nvim-tree/nvim-web-devicons
+mfussenegger/nvim-jdtls
+udalov/kotlin-vim
+diepm/vim-rest-console
+rebelot/kanagawa.nvim

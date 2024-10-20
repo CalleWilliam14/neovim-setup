@@ -77,9 +77,6 @@ return require('packer').startup(function(use)
   -- outline
   use 'hedyhli/outline.nvim'
 
-  -- onedarkpro
-  use 'olimorris/onedarkpro.nvim'
-
   -- modern fold
   use {
     'kevinhwang91/nvim-ufo',
