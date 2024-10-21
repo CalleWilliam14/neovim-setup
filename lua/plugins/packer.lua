@@ -86,6 +86,7 @@ return require('packer').startup(function(use)
   -- rest console
   use 'diepm/vim-rest-console'
 
+  -- syntax hightlight
   use 'rebelot/kanagawa.nvim'
 
   -- nvim-tree
