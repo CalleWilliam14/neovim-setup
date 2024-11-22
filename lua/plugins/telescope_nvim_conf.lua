@@ -7,7 +7,7 @@ require('telescope').setup({
   defaults = {
     -- path_display = { 'smart' },
     file_ignore_patterns = {
-      '.git/', 'node_modules', 'vendor'
+      '.git', 'node_modules', 'vendor'
     },
   }
 })
