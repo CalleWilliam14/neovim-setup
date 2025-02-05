@@ -67,7 +67,7 @@ vim.diagnostic.config({
 local signs = {
   Error = '\u{f057} ',
   Warn = '\u{f071} ',
-  Hint = '\u{f06a} ',
+  Hint = '\u{f0335} ',
   Info = '\u{f05a} '
 }
 

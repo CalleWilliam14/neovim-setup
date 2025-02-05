@@ -20,6 +20,12 @@ require('nvim-tree').setup({
   diagnostics = {
     enable = true,
     show_on_dirs = true,
+    icons = {
+      error = '\u{f057}',
+      warning = '\u{f071}',
+      hint = '\u{f0335}',
+      info = '\u{f05a}'
+    }
   }
 })
 
