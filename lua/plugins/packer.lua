@@ -62,7 +62,7 @@ return require('packer').startup(function(use)
   use 'rmagatti/goto-preview'
 
   -- detect indent files
-  use 'NMAC427/guess-indent.nvim'
+  -- use 'NMAC427/guess-indent.nvim'
 
   -- telescope
   use {
@@ -102,13 +102,19 @@ return require('packer').startup(function(use)
   -- nvim java
   use 'mfussenegger/nvim-jdtls'
 
+  -- nvim dap
+  -- use 'mfussenegger/nvim-dap'
+
   -- kotlin-vim
-  use 'udalov/kotlin-vim'
+  -- use 'udalov/kotlin-vim'
 
   -- vim rest console
   use 'diepm/vim-rest-console'
 
   -- kanagawa colorscheme
   use 'rebelot/kanagawa.nvim'
+
+  -- onedark colorscheme
+  use 'olimorris/onedarkpro.nvim'
 end)
 

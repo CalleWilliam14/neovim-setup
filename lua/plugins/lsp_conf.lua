@@ -76,3 +76,17 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
 end
 
+require('lspconfig').texlab.setup({
+  settings = {
+    texlab = {
+      build = {
+        executable = 'pdflatex',
+        onSave = true,
+      },
+      forwardSearch = {
+        executable = 'zathura',
+        args = { '--synctex-forward', '%l:1:%f', '%p' },
+      }
+    }
+  }
+})
