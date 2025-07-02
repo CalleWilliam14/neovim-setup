@@ -61,20 +61,28 @@ vim.diagnostic.config({
     source = 'if_many',
     header = '',
     prefix = '',
-  }
+  },
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = '\u{f057} ',
+      [vim.diagnostic.severity.WARN] = '\u{f071} ',
+      [vim.diagnostic.severity.HINT] = '\u{f0335} ',
+      [vim.diagnostic.severity.INFO] = '\u{f05a} '
+    },
+  },
 })
 
-local signs = {
-  Error = '\u{f057} ',
-  Warn = '\u{f071} ',
-  Hint = '\u{f0335} ',
-  Info = '\u{f05a} '
-}
-
-for type, icon in pairs(signs) do
-  local hl = 'DiagnosticSign' .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
-end
+-- local signs = {
+--   Error = '\u{f057} ',
+--   Warn = '\u{f071} ',
+--   Hint = '\u{f0335} ',
+--   Info = '\u{f05a} '
+-- }
+--
+-- for type, icon in pairs(signs) do
+--   local hl = 'DiagnosticSign' .. type
+--   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
+-- end
 
 require('lspconfig').texlab.setup({
   settings = {
@@ -90,3 +98,12 @@ require('lspconfig').texlab.setup({
     }
   }
 })
+
+local open_floating_preview = vim.lsp.util.open_floating_preview
+
+function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+  opts = opts or {}
+  opts.border = 'rounded'
+
+  return open_floating_preview(contents, syntax, opts, ...)
+end

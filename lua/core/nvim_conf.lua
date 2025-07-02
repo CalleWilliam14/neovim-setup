@@ -17,7 +17,7 @@ vim.opt.scrolloff = 18
 vim.opt.breakindent = true
 
 vim.cmd([[
-  autocmd FileType html,css,javascript,javascriptreact,typescript,typescriptreact,lua,text setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
+  autocmd FileType html,css,javascript,javascriptreact,typescript,typescriptreact,lua,text,dart setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
 ]])
 
 vim.api.nvim_set_hl(0, 'NormalFloat', { link = 'Normal' })

@@ -9,15 +9,12 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- auto pairs
-  use 'jiangmiao/auto-pairs'
+  -- use 'jiangmiao/auto-pairs'
+
+  use 'windwp/nvim-autopairs'
 
   -- nvim-tree
-  use {
-    'nvim-tree/nvim-tree.lua',
-    requires = {
-      'nvim-tree/nvim-web-devicons'
-    }
-  }
+  use 'nvim-tree/nvim-tree.lua'
 
   -- lsp
   use {
@@ -39,7 +36,11 @@ return require('packer').startup(function(use)
   }
 
   -- git status on file
-  use 'airblade/vim-gitgutter'
+  -- use 'airblade/vim-gitgutter'
+
+  use 'lewis6991/gitsigns.nvim'
+
+  use 'tpope/vim-fugitive'
 
   -- indent blankline
   use 'lukas-reineke/indent-blankline.nvim'
@@ -51,12 +52,7 @@ return require('packer').startup(function(use)
   use 'm4xshen/smartcolumn.nvim'
 
   -- vim lualine
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = {
-      'nvim-tree/nvim-web-devicons',
-    }
-  }
+  use 'nvim-lualine/lualine.nvim'
 
   -- goto-preview
   use 'rmagatti/goto-preview'
@@ -96,7 +92,6 @@ return require('packer').startup(function(use)
   use {
     'akinsho/bufferline.nvim',
     tag = "*",
-    requires = 'nvim-tree/nvim-web-devicons'
   }
 
   -- nvim java
@@ -115,6 +110,18 @@ return require('packer').startup(function(use)
   use 'rebelot/kanagawa.nvim'
 
   -- onedark colorscheme
-  use 'olimorris/onedarkpro.nvim'
+  -- use 'olimorris/onedarkpro.nvim'
+
+  -- flutter
+  use {
+    'nvim-flutter/flutter-tools.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'stevearc/dressing.nvim', -- optional for vim.ui.select
+    },
+  }
+
+  -- nerd font icons support
+  use 'DaikyXendo/nvim-material-icon'
 end)
 
