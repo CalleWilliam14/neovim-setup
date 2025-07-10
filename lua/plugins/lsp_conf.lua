@@ -25,6 +25,7 @@ require('mason-lspconfig').setup({
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
+local lspkind = require('lspkind')
 
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
@@ -50,7 +51,10 @@ cmp.setup({
   window = {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
-  }
+  },
+  formatting = {
+    format = lspkind.cmp_format(),
+  },
 })
 
 vim.diagnostic.config({

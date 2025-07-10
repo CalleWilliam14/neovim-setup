@@ -123,5 +123,8 @@ return require('packer').startup(function(use)
 
   -- nerd font icons support
   use 'DaikyXendo/nvim-material-icon'
+
+  -- lspkind
+  use 'onsails/lspkind.nvim'
 end)
 

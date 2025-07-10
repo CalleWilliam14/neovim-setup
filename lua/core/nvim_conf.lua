@@ -15,6 +15,7 @@ vim.opt.linebreak = true
 vim.opt.list = false
 vim.opt.scrolloff = 18
 vim.opt.breakindent = true
+vim.opt.writebackup = false
 
 vim.cmd([[
   autocmd FileType html,css,javascript,javascriptreact,typescript,typescriptreact,lua,text,dart setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
