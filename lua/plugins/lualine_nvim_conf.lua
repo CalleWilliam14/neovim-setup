@@ -74,18 +74,17 @@ return {
             color = function() return { fg = Snacks.util.color("Debug") } end,
           },
           -- stylua: ignore
-          {
-            require("lazy.status").updates,
-            cond = require("lazy.status").has_updates,
-            color = function() return { fg = Snacks.util.color("Special") } end,
-          },
+          -- {
+          --   require("lazy.status").updates,
+          --   cond = require("lazy.status").has_updates,
+          --   color = function() return { fg = Snacks.util.color("Special") } end,
+          -- },
         },
         lualine_y = {
-          -- { "filetype", icon_only = true, separator = "", padding                = { left = 1, right = 0 } },
+          { "progress" },
         },
         lualine_z = {
-          { "progress", separator = " ", padding = { left = 1, right = 0 } },
-          { "location", padding = { left = 0, right = 1 } },
+          { "location" },
         },
       },
 
