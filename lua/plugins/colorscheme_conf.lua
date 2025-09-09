@@ -1,9 +1,18 @@
 return {
-  -- { "rebelot/kanagawa.nvim" },
+  { "rebelot/kanagawa.nvim" },
 
   -- { "EdenEast/nightfox.nvim" },
 
+  -- { "projekt0n/github-nvim-theme" },
+
   { "bluz71/vim-moonfly-colors" },
+
+  {
+    "deparr/tairiki.nvim",
+    opts = {
+      cmp_itemkind_reverse = true,
+    },
+  },
 
   {
     "catppuccin/nvim",
