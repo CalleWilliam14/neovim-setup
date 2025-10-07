@@ -11,11 +11,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      servers = {
-        jdtls = {
-          autostart = false
-        },
-      },
       diagnostics = {
         float = {
           border = "rounded",
