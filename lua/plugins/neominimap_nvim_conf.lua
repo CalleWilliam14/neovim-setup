@@ -7,4 +7,5 @@ return {
     { "<leader>nc", "<cmd>Neominimap Disable<cr>", desc = "Disable global minimap" },
     { "<leader>nr", "<cmd>Neominimap Refresh<cr>", desc = "Refresh global minimap" },
   },
+  enabled = false,
 }

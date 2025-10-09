@@ -11,10 +11,10 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      servers = {
-        jdtls = {
-          autostart = false
-        },
+      setup = {
+        jdtls = function()
+          return true -- avoid duplicate servers
+        end,
       },
       diagnostics = {
         float = {
